@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity()
 @Table(name = "proveedor")
-public class ProviderEntity extends PersonalInfo {
+public class ProviderEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,6 +21,14 @@ public class ProviderEntity extends PersonalInfo {
     private String endPoint;
     @Column(name = "info_general")
     private String generalInformation;
+    @Column(name = "id_tipo_identificacion")
+    private int identificationType;
+    @Column(name = "numero_identificacion")
+    private String identificationNumber;
+    @Column(name = "correo")
+    private String email;
+    @Column(name = "telefono")
+    private String phoneNumber;
 
     public int getId() {
         return id;
@@ -68,6 +76,38 @@ public class ProviderEntity extends PersonalInfo {
 
     public void setGeneralInformation(String generalInformation) {
         this.generalInformation = generalInformation;
+    }
+
+    public int getIdentificationType() {
+        return identificationType;
+    }
+
+    public void setIdentificationType(int identificationType) {
+        this.identificationType = identificationType;
+    }
+
+    public String getIdentificationNumber() {
+        return identificationNumber;
+    }
+
+    public void setIdentificationNumber(String identificationNumber) {
+        this.identificationNumber = identificationNumber;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
 }
