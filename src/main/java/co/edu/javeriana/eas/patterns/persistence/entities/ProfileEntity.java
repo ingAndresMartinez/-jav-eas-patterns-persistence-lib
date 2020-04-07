@@ -8,9 +8,9 @@ public class ProfileEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column("id_perfil")
+    @Column(name = "id_perfil")
     private int id;
-    @Column("perfil")
+    @Column(name = "perfil")
     private String profileDescription;
 
     public int getId() {

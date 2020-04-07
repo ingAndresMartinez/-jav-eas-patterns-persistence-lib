@@ -4,13 +4,13 @@ import javax.persistence.Column;
 
 public class PersonalInfo {
 
-    @Column("id_tipo_identificacion")
+    @Column(name = "id_tipo_identificacion")
     private int identificationType;
-    @Column("numero_identificacion")
+    @Column(name = "numero_identificacion")
     private String identificationNumber;
-    @Column("correo")
+    @Column(name = "correo")
     private String email;
-    @Column("telefono")
+    @Column(name = "telefono")
     private String phoneNumber;
 
     public int getIdentificationType() {

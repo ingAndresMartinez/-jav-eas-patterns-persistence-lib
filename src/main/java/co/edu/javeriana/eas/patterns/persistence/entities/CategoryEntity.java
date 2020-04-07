@@ -8,9 +8,9 @@ public class CategoryEntity extends PersonalInfo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column("id_categoria")
+    @Column(name = "id_categoria")
     private int id;
-    @Column("categoria")
+    @Column(name = "categoria")
     private String categoryDescription;
 
     public int getId() {

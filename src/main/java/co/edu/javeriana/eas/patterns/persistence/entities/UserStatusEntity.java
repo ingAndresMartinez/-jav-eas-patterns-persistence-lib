@@ -8,9 +8,9 @@ public class UserStatusEntity extends PersonalInfo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column("id_estado")
+    @Column(name = "id_estado")
     private int id;
-    @Column("estado")
+    @Column(name = "estado")
     private String statusDescription;
 
     public int getId() {

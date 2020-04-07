@@ -8,15 +8,15 @@ public class UserEntity extends PersonalInfo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column("id_usuario")
+    @Column(name = "id_usuario")
     private int id;
-    @JoinColumn(name = "id_persona", referencedColumnName = "id_categoria", nullable = false)
+    @JoinColumn(name = "id_persona", referencedColumnName = "id_persona", nullable = false)
     @ManyToOne(optional = false)
     private PersonEntity person;
     @JoinColumn(name = "id_perfil", referencedColumnName = "id_perfil", nullable = false)
     @ManyToOne(optional = false)
     private ProfileEntity profile;
-    @Column("usuario")
+    @Column(name = "usuario")
     private String userCode;
     private String password;
     private String token;

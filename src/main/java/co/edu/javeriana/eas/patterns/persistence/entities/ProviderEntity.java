@@ -8,20 +8,18 @@ public class ProviderEntity extends PersonalInfo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column("id_proveedor")
+    @Column(name = "id_proveedor")
     private int id;
     @JoinColumn(name = "id_categoria", referencedColumnName = "id_categoria", nullable = false)
     @ManyToOne(optional = false)
     private CategoryEntity category;
-    @Column("razon_social")
+    @Column(name = "razon_social")
     private String businessName;
-    @Column("apellido")
-    private String lastName;
-    @Column("direccion")
+    @Column(name = "direccion")
     private String address;
-    @Column("end_point")
+    @Column(name = "end_point")
     private String endPoint;
-    @Column("info_general")
+    @Column(name = "info_general")
     private String generalInformation;
 
     public int getId() {
@@ -46,14 +44,6 @@ public class ProviderEntity extends PersonalInfo {
 
     public void setBusinessName(String businessName) {
         this.businessName = businessName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
     }
 
     public String getAddress() {

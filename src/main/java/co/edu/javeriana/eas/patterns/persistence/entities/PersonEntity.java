@@ -8,11 +8,11 @@ public class PersonEntity extends PersonalInfo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column("id_persona")
+    @Column(name = "id_persona")
     private int id;
-    @Column("nombre")
+    @Column(name = "nombre")
     private String firstName;
-    @Column("apellido")
+    @Column(name = "apellido")
     private String lastName;
     @JoinColumn(name = "id_proveedor", referencedColumnName = "id_proveedor")
     @ManyToOne(optional = false)
