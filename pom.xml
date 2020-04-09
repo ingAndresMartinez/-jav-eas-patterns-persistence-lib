@@ -10,9 +10,9 @@
     </parent>
     <groupId>co.edu.javeriana.eas.patterns</groupId>
     <artifactId>jav-eas-patterns-persistence-lib</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>jav-eas-patterns-persistence-lib</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Persistence Manager</description>
 
     <properties>
         <java.version>1.8</java.version>
