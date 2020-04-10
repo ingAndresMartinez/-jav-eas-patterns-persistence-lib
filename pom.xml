@@ -10,7 +10,7 @@
     </parent>
     <groupId>co.edu.javeriana.eas.patterns</groupId>
     <artifactId>jav-eas-patterns-persistence-lib</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>jav-eas-patterns-persistence-lib</name>
     <description>Persistence Manager</description>
 
