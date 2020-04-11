@@ -110,4 +110,20 @@ public class ProviderEntity {
         this.phoneNumber = phoneNumber;
     }
 
+    @Override
+    public String toString() {
+        return "ProviderEntity{" +
+                "id=" + id +
+                ", category=" + category +
+                ", businessName='" + businessName + '\'' +
+                ", address='" + address + '\'' +
+                ", endPoint='" + endPoint + '\'' +
+                ", generalInformation='" + generalInformation + '\'' +
+                ", identificationType=" + identificationType +
+                ", identificationNumber='" + identificationNumber + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                '}';
+    }
+
 }
