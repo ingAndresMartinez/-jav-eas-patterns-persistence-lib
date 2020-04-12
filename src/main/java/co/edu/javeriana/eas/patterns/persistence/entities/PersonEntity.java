@@ -17,8 +17,9 @@ public class PersonEntity {
     @JoinColumn(name = "id_proveedor", referencedColumnName = "id_proveedor")
     @ManyToOne()
     private ProviderEntity provider;
-    @Column(name = "id_tipo_identificacion")
-    private int identificationType;
+    @JoinColumn(name = "id_tipo_identificacion", referencedColumnName = "id_tipo_identificacion", nullable = false)
+    @ManyToOne(optional = false)
+    private IdentificationTypeEntity identificationType;
     @Column(name = "numero_identificacion")
     private String identificationNumber;
     @Column(name = "correo")
@@ -54,15 +55,15 @@ public class PersonEntity {
         return provider;
     }
 
-    public void setProviderEntity(ProviderEntity provider) {
+    public void setProvider(ProviderEntity provider) {
         this.provider = provider;
     }
 
-    public int getIdentificationType() {
+    public IdentificationTypeEntity getIdentificationType() {
         return identificationType;
     }
 
-    public void setIdentificationType(int identificationType) {
+    public void setIdentificationType(IdentificationTypeEntity identificationType) {
         this.identificationType = identificationType;
     }
 
